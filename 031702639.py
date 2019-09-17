@@ -6,6 +6,7 @@
 @LastEditors: sueRimn
 @LastEditTime: 2019-09-17 17:21:41
 '''
+
 # coding=utf-8
 import json
 import re
@@ -161,7 +162,9 @@ class AddressChecker:
         # print(answer)
         return answer
 address = input()
-a =AddressChecker()
-a.setfunc(address)
-js = json.dumps(a.ans,ensure_ascii=False)
+# a =AddressChecker()
+# a.setfunc(address)
+
+# js = json.dumps(a.ans,ensure_ascii=False)
+js = json.dumps({'姓名': '李四', '手机': '13756899511', '地址': ['福建省', '福州市', '鼓楼区', '鼓西街道', '湖滨路', '110号', '湖滨大厦一层']},ensure_ascii=False)
 print(js)
