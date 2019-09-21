@@ -221,5 +221,6 @@ class AddressChecker:
 address = input()
 a =AddressChecker()
 a.setfunc(address)
-js = json.dumps(a.ans,ensure_ascii=False)
+js = json.dumps(a.ans,indent=4)
+js=js.encode('utf-8').decode('unicode_escape')
 print(js)
