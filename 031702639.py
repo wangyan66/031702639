@@ -174,7 +174,6 @@ class AddressChecker:
                 for s in list2:
                     
                     if s[:2]==address[:2]:
-                        print(address[:2])
                         cityOne=s
                         jsArray.append(s)
                         if cityOne[-1:]=='市' or cityOne[-1:]=='盟':
